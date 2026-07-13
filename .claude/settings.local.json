@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__claude-in-chrome__navigate",
+      "mcp__claude-in-chrome__computer",
+      "mcp__claude-in-chrome__read_page",
+      "Bash(node -e ' *)",
+      "Bash(npx serve *)",
+      "Bash(Start-Sleep -Seconds 2)",
+      "Bash(Get-Content \"C:\\\\Users\\\\HP\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-HP-Downloads-swapx-fi-1783773299327\\\\577f7eef-86c1-477f-9c3d-c513ae5523a8\\\\tasks\\\\bs5tqy8u5.output\" -ErrorAction SilentlyContinue)",
+      "PowerShell(Start-Process python -ArgumentList \"-m\", \"http.server\", \"3456\", \"--directory\", \"C:\\\\Users\\\\HP\\\\Downloads\\\\swapx.fi-1783773299327\" -WindowStyle Hidden)",
+      "mcp__claude-in-chrome__read_console_messages",
+      "mcp__claude-in-chrome__read_network_requests",
+      "mcp__claude-in-chrome__javascript_tool",
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "Bash(node apply-fix.js)",
+      "PowerShell(Get-Process python -ErrorAction SilentlyContinue | Where-Object { $_.MainWindowTitle -eq \"\" } | Stop-Process -Force -ErrorAction SilentlyContinue; Start-Sleep 1; Start-Process python -ArgumentList \"-m\", \"http.server\", \"3456\", \"--directory\", \"C:\\\\Users\\\\HP\\\\Downloads\\\\swapx.fi-1783773299327\" -WindowStyle Hidden; Start-Sleep 2; Write-Output \"Server restarted\")",
+      "mcp__claude-in-chrome__tabs_create_mcp",
+      "PowerShell(Select-String -Path \"C:\\\\Users\\\\HP\\\\Downloads\\\\swapx.fi-1783773299327\\\\index.html\" -Pattern 'openWalletModal\\\\\\(\\\\\\)' | ForEach-Object { $_.Line.Substring\\([Math]::Max\\(0, $_.Line.IndexOf\\('openWalletModal'\\) - 50\\), [Math]::Min\\(120, $_.Line.Length - [Math]::Max\\(0, $_.Line.IndexOf\\('openWalletModal'\\) - 50\\)\\)\\) })",
+      "mcp__claude-in-chrome__tabs_context_mcp"
+    ]
+  }
+}
